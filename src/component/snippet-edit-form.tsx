@@ -26,7 +26,6 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
         options={{ minimap: { enabled: false } }}
         onChange={handleEditorChange}
         />
-          {/* <button onClick={handleClick}>Save</button> */}
           <form action={editSnippetAction}>
               <button type='submit' className='p-2 border rounded text-xl'> Save</button>
           </form>
