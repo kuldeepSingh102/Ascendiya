@@ -19,7 +19,7 @@ export default async function SnippetEditPage(props: SnippetEditPageProps) {
     }
     return ( 
         <>
-            {snippet.code}
+            {/* {snippet.code} */}
       <SnippetEditForm snippet={snippet}/>
       </>
     )

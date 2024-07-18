@@ -16,7 +16,7 @@ export default async function snippetShowPage(props: snippetShowPageProps) {
     return notFound();
   }
 
-  const deleteSnippetAction = action.deletesSnippet.bind(null,snippet.id)
+  const deleteSnippetAction = action.deleteSnippet.bind(null,snippet.id)
   return (
     <div>
       <div className="flex m-4 justify-between items-center">

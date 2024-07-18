@@ -13,21 +13,24 @@ export default function SnippetEditForm({ snippet }: SnippetEditFormProps) {
     const handleEditorChange = (value:string = "") => {
          setCode(value)
     } 
-    const editSnippetAction = actions.editSnipet.bind(null, snippet.id, code);
+    const editSnippetAction = actions.editSnippet.bind(null, snippet.id, code);
   return (
-    <div>
+    <div className='my-4 bg-black'>Edit your snippet
+      <div className='m-10 '>
+
       <Editor
         height="40vh"
         theme="vs-dark"
         language="javascript"
         defaultValue={snippet.code}
-              options={{ minimap: { enabled: false } }}
-              onChange={handleEditorChange}
-          />
+        options={{ minimap: { enabled: false } }}
+        onChange={handleEditorChange}
+        />
           {/* <button onClick={handleClick}>Save</button> */}
           <form action={editSnippetAction}>
               <button type='submit' className='p-2 border rounded text-xl'> Save</button>
           </form>
+        </div>
       </div>
   );
 }
