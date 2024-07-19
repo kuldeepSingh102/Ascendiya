@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useFormState } from 'react-dom';
-import * as actions from '@/actions';
-import { db } from '@/db';
+import { useFormState } from "react-dom";
+import * as actions from "@/actions";
+import { db } from "@/db";
 
 export default function SnippetCreatePage() {
   const [formState, action] = useFormState(actions.createSnippet, {
-    message: '',
+    message: "",
   });
 
   return (
@@ -48,4 +48,3 @@ export default function SnippetCreatePage() {
     </form>
   );
 }
-
