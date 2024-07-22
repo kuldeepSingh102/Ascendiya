@@ -19,7 +19,9 @@ export default async function SnippetEditPage(props: SnippetEditPageProps) {
   return (
     <>
       {/* {snippet.code} */}
-      <SnippetEditForm snippet={snippet} />
+      <div className="container mx-auto p-4">
+        <SnippetEditForm snippet={snippet} />
+      </div>
     </>
   );
 }
